@@ -10,8 +10,8 @@ import Firebase
 import SDWebImage
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-   
+    
+    
     @IBOutlet weak var tableView: UITableView!
     var userNameArray = [String]()
     var likeArray = [Int]()
@@ -28,7 +28,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
-
+    
     func getDataFireStore(){
         
         let fireStoreDB = Firestore.firestore()
@@ -73,9 +73,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }
         /*
-        var settings = fireStoreDB.settings
-        settings.areTimestamspInSnapshotsEnabled = true
-        fireStoreDB.settings = settings
+         var settings = fireStoreDB.settings
+         settings.areTimestamspInSnapshotsEnabled = true
+         fireStoreDB.settings = settings
          */
     }
     

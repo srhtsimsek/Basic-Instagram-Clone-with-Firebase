@@ -9,15 +9,15 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var userPasswordTextfield: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
     }
-
+    
     @IBAction func signInClicked(_ sender: Any) {
         
         if usernameTextfield.text != "" && userPasswordTextfield.text != "" {

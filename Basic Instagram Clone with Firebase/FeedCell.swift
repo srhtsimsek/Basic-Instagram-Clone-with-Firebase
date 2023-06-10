@@ -16,7 +16,7 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var documentIdLabel: UILabel!
     @IBOutlet weak var likeButtonOutlet: UIButton!
-
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,14 +33,15 @@ class FeedCell: UITableViewCell {
     @IBAction func likeButtonAction(_ sender: Any) {
         
         let fireStoreDB = Firestore.firestore()
-      
-            if let likeSum = Int(likeLabel.text!){
-                let likeStore = ["likes": likeSum + 1] as [String: Any]
-                fireStoreDB.collection("Posts").document(documentIdLabel.text!).setData(likeStore, merge: true)
-                likeButtonOutlet.setImage(UIImage(named: "redLike"), for: .normal)
-                
-            }
+        
+        
+        if let likeSum = Int(likeLabel.text!){
+            let likeStore = ["likes": likeSum + 1] as [String: Any]
+            fireStoreDB.collection("Posts").document(documentIdLabel.text!).setData(likeStore, merge: true)
+            likeButtonOutlet.setImage(UIImage(named: "redLike"), for: .normal)
+            
+        }
     }
- 
+    
 }
 

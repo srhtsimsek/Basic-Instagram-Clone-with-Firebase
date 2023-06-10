@@ -9,14 +9,14 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
     @IBOutlet weak var uploadImageview: UIImageView!
     @IBOutlet weak var commentTextfield: UITextField!
     @IBOutlet weak var uploadUoutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         uploadImageview.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(chooseImage))
         uploadImageview.addGestureRecognizer(gestureRecognizer)
@@ -42,7 +42,7 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         self.present(alert, animated: true)
         
     }
-     
+    
     @IBAction func uploadButton(_ sender: Any) {
         let storage = Storage.storage()
         let storageReference = storage.reference()
@@ -54,7 +54,7 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
             
             let imageReference = mediaFolder.child("\(uuid).jpg")
             imageReference.putData(data, metadata: nil) { metadata, error in
-                            
+                
                 if error != nil {
                     self.alertMessage(title1: "Hata!", subtitle: error?.localizedDescription ?? "Error" , alertButtonTitle: "Tamam")
                 } else {
@@ -92,5 +92,5 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         
     }
     
-
+    
 }
