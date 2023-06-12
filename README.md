@@ -1,4 +1,5 @@
 # Basic-Instagram-Clone-with-Firebase
 https://www.youtube.com/watch?v=ZKhZvKf6eZQ
 
-<img src="https://github.com/srhtsimsek/Basic-Instagram-Clone-with-Firebase/assets/90550549/6f180f52-a8f0-44ae-aeb3-b4af23d2bcfa" width="250"> <img src="https://github.com/srhtsimsek/Basic-Instagram-Clone-with-Firebase/assets/90550549/157212e2-e39f-4e1d-96f4-383d13da35e9" width="250">
+
+<img src="https://github.com/srhtsimsek/Basic-Instagram-Clone-with-Firebase/assets/90550549/2f264136-9b0a-4fad-8987-9a09d588d4c9" width="250"> <img src="https://github.com/srhtsimsek/Basic-Instagram-Clone-with-Firebase/assets/90550549/6613f74e-fcac-4915-99ed-bb4a16beb06f" width="250">
